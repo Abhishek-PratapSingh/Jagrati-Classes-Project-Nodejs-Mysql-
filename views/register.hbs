@@ -9,14 +9,16 @@
 </head>
 <body>
   <nav>
-    <h4>Node MySQL</h4>
+    <h4>Authority Register</h4>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/login">Login</a></li>
       <li><a href="/register">Register</a></li>
     </ul>
   </nav>
-
+ {{#if message }}
+      <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}
   <div class="container mt-4">
     <div class="card">
       <div class="card-header">
@@ -49,9 +51,7 @@
       </div>
     </div>
 
-    {{#if message }}
-      <h4 class="alert alert-danger mt-4">{{message}}</h4>
-    {{/if}}
+   
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
